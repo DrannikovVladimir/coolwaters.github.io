@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ТОО Waters Service</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  <main id="main">
+    <div class="container">
+      <div class="row">
+        <div class="main-nav">
+          <div class="col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-5">
+            <div class="main-logo">
+              <div class="logo">
+                <img src="img/logo.png" alt="Логотип">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-md-offset-0 col-sm-10">
+            <nav>
+              <ul>
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#produces">Напитки</a></li>
+                <li><a href="#equipment">Оборудование</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="main-header">
+            <h1>Cool Waters</h1>
+            <p>Артезианская природная питьевая вода</p>
+          </div>
+          <div class="main-title">
+            <p>Михайловское месторождение подземных вод</p>
+            <p>(Кумызкудукская свита)</p>
+            <button class="main-title-button" data-toggle="tab" data-target="#about">Узнать больше</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+          <div class="main-form">
+            <form action="mailer/smart.php" method="POST">
+              <h3>Заказать доставку</h3>
+              <p>Для заказа воды введите свои данные и нажмите кнопку заказать</p>
+              <label for="user">Введите имя</label>
+              <input type="text" id="user" name="user-name" required><br>
+              <label for="phone">Введите телефон</label>
+              <input type="text" id="phone" name="user-phone" required><br>
+              <button class="main-btn">Заказать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Наши преимущества</h2>
+      </div>
+      <div class="features-slider">
+        <div class="features-block">
+          <div class="features-block-header">
+            <h3>Добыча и розлив<br>питьевой воды</h3>
+          </div>
+          <div class="features-img">
+           <img src="img/features/1.png" alt="">
+          </div>
+          <div class="features-text">
+            <p>Скважина пробурена в 1991 году, глубиной 80 метров. Находится в стационарном павильоне</p>
+            <p>Установлен водомер, имеется электроуровнемер, журналы для учёта забора воды и замеров</p>
+            <p>Химические анализы воды выполняются аттестованными лабораториями г.Караганды</p>
+          </div>
+        </div>
+        <div class="features-block">
+          <div class="features-block-header">
+            <h3>Производство<br>напитков</h3>
+          </div>
+          <div class="features-img">
+            <img src="img/features/2.png" alt="">
+          </div>
+          <div class="features-text">
+            <p>Наша компания выпускает газированные и негазированные безалкогольные напитка.</p>
+            <p>Так же присутствует линейка по производству сокосодержащей продукции и холодных чаёв</p>
+            <p>Мы рады предложить Вам колу, квас и детское шампанское</p>
+          </div>
+        </div>
+        <div class="features-block">
+          <div class="features-block-header">
+            <h3>Логистика и<br>доставка</h3>
+          </div>
+          <div class="features-img">
+            <img src="img/features/3.png" alt="">
+          </div>
+          <div class="features-text">
+            <p>Реализация нашей продукции успешно осуществляется по всей территории Республики Казахстан</p>
+            <p>Мы работаем с самыми крупными диллерами и доставляем товар в любой город РК</p>
+            <p>Улучшаем координацию взаимодействия логистических и производственных процессов</p>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+  
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>О компании и торговом бренде</h2>
+      </div>
+        <div class="about-block">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+              <div class="about-img">
+                <img src="img/about/1.jpg" alt="завод">
+              </div>
+            </div>
+            <div class="col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1">
+              <div class="about-text">
+                <h3>Компания «Waters Service» была образована в 2002 году.</h3>
+                <p>Мы работаем на рынке Казахстана уже 15 лет. У нас есть большой завод, многочисленный штат сотрудников, парк машин, ремонтная мастерская. Компания «Waters Service» успешно участвует в различных выставках, проводимых в  городе Караганда среди производителей продуктов питания, занимая призовые места. Мы предлагает вам чистую природную воду «Cool Waters», которую можно пить без кипячения детям и взрослым. Наш ассортимент насчитывает более 50 видов напитков. Кроме того одним из важных направлений деятельности фирмы является производство питьевой воды в бутылях ёмкостью 19л. и установка диспенсеров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-block">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1">
+              <div class="about-text">
+                <h3>У нас есть собственная скважина глубиной 80 метров</h3>
+                <p>Вода не нуждается в дополнительной обработке и очистке в домашних условиях, является наиболее естественной, полезной и рекомендуемой для приготовления пищи. До того как попасть к вам, вода проходит четыре ступени очистки, а процесс кипячения заменяется обработкой ультрафиолетовыми лучами. Вода приобретает неповторимый вкус и особые свойства. Воду не перевозят до розлива, а упаковывают в экологически чистые бутылки на месте добычи, что позволяет максимально сохранять уникальные природные качества воды. Будьте счастливы с продукцией компании «Waters Service»</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+              <div class="about-img">
+                <img src="img/about/2.jpg" alt="завод">
+              </div>
+            </div>
+          </div>
+        </div>
+      <button class="about-btn"  data-toggle="modal" data-target="#modalAbout">Узнать больше</button>
+    </div>
+  </section>
+
+  <section class="produces" id="produces">
+    <div class="container">
+      <div class="section-header">
+        <h2>Основная продукция</h2>
+      </div>
+
+      <div class="produces-block">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <div class="produces-text">
+              <h3>Сокосодержащие напитки и холодные чаи</h3>
+              <p>Cодержание натурального сока в сокосодержащих напитках составляет около 10%. Холодный чай отлично уталяет жажду в любое время года, а детское шампанское станет прекрасным украшением на любых праздниках. </p>
+              <button class="produces-btn" data-toggle="modal" data-target="#modalJuice">открыть каталог</button>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div class="produces-img">
+              <img src="img/produces/juices.png" alt="Соки и чаи">
+            </div>
+          </div>
+        </div>
+        <div class="produces-line"><img src="img/produces/line.png" alt="линия"></div>
+      </div>
+
+      <div class="produces-block">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div class="produces-img">
+              <img src="img/produces/waters.png" alt="Вода">
+            </div>
+          </div>
+          <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <div class="produces-text">
+              <h3>Газированная и негазированная вода</h3>
+              <p>Питьевая артезианская вода торговой марки “Cool Waters” в ёмкостях 0.5, 1.0, 1.5, 2.0 и 5 литров.</p>
+              <button class="produces-btn" data-toggle="modal" data-target="#modalWaters">открыть каталог</button>
+            </div>
+          </div>
+        </div>
+        <div class="produces-line"><img src="img/produces/line.png" alt="линия"></div>
+      </div>
+
+      <div class="produces-block">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <div class="produces-text">
+              <h3>Лимонады</h3>
+              <p>Огромный выбор лимонадов, которые уже давно стали классикой такие как Тархун, Дюшес, Буратино, Лимонад и много, много других напитков. </p>
+              <p>Из сопуствующей продукции можем предложить несколько видов кваса в разных литражах, кола, выпускаемая под маркой “Cool Cola”, Байкал и т.п.</p>
+              <button class="produces-btn" data-toggle="modal" data-target="#modalLimonades">открыть каталог</button>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div class="produces-img">
+              <img src="img/produces/limonades.png" alt="Лимонады">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="equipment" id="equip">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cопутствующее оборудование</h2>
+      </div>
+      <div class="equipment-slider">
+        <div class="equipment-block">
+          <div class="equipment-header">
+            <h3>Диспенсеры</h3>
+          </div>
+          <div class="equipment-img">
+            <img src="img/equipment/1.jpg" alt="Диспенсеры">
+          </div>
+          <div class="equipment-text">
+            <p>Диспенсер - это универсальный распределитель воды. Он способен нагревать до +98 и охлаждать до +10 всего за 20 минут, а так же поддерживать этот температурный режим в течении всего времени. Наша компания предлагает вам выбрать любой диспенсер из модельного ряда.</p>
+          </div>
+        </div>
+        <div class="equipment-block">
+          <div class="equipment-header">
+            <h3>Вода 19л.</h3>
+          </div>
+          <div class="equipment-img">
+            <img src="img/equipment/2.jpg" alt="Вода 19">
+          </div>
+          <div class="equipment-text">
+            <p>Поликарбонат не вступает во взаимодействие с водой. Благодаря этому бутыли позволяют хранить питьевую воду  с гарантией сохранения первоначального вкуса. Поликарбонат – прочный пластиковый материал, что дает возможность использовать бутыль многократно.</p>
+          </div>
+        </div>
+        <div class="equipment-block">
+          <div class="equipment-header">
+            <h3>Помпы</h3>
+          </div>
+          <div class="equipment-img">
+            <img src="img/equipment/3.jpg" alt="Помпы">
+          </div>
+          <div class="equipment-text">
+            <p>Электрическая или механическая  помпа представляет собой приспособление для накачки воды и может выступать в качестве упрощённой альтернативы диспенсеру. Простота в эксплуатации — чтобы налить воду, нужно просто нажать на кнопку.</p>
+          </div>
+        </div>
+      </div>
+      <button class="equipment-btn" data-toggle="modal" data-target="#modalEquip">Посмотреть всё</button>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="section-header">
+        <h2>Контактная информация и карта проезда</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-5">
+          <div class="contacts-block">
+            <h3>ТОО Waters Service</h3>
+            <p>Адрес: <strong>г. Караганда, ул. Гончарная 17</strong></p>
+            <p>E-mail: <strong>waters_service@mail.ru</strong></p>
+            <p>Часы работы: <strong>Пн-Сб с 08:30 до 18:00</strong></p>
+            <p><span><strong>Телефоны</strong></span></p>
+            <p>Приёмная: <strong>+7 (7212) 38-13-92</strong></p>
+            <p>Бухгалтерия: <strong>+7 (7212) 38-13-94</strong></p>
+            <p>Диспетчеры: <strong>+7 (7212) 38-13-90, 38-13-93</strong></p>
+            <p>Факс: <strong>+7 (7212) 38-13-87</strong></p>
+            <p><strong></strong></p>
+            <p><strong></strong></p>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-0 col-sm-7">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa3dd21a6f87ea862b0e2bf0de47f19e462f16174d94b1def74f6f8a2108f2098&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-block">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="copy">
+              <p>ТОО "Waters Service"</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4">
+            <div class="logo">
+              <div class="logo-wrap">
+                <a class="logo-link" href="#main"><img src="img/logo.png" alt="Логотип"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-offset-1 col-sm-4 col-xs-4">
+            <div class="copy-right">
+              <p>&#169;Copyrigth 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Модальное окно для секции About -->
+  <div class="modal fade" id="modalAbout">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Краткая история развития компании</h4>
+        </div>
+        <div class="modal-body">
+          
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-img">
+                <img src="img/about/3.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="modal-text">
+                <p >Компания <strong>«Waters Service»</strong> была образована в 2002 году и работает на рынке Казахстана уже 15 лет. В неё входит большой завод, многочисленный штат сотрудников, парк машин, ремонтная мастерская. Организация успешно участвует в различных выставках, проводимых в нашем городе среди производителей продуктов питания, занимая призовые места.</p> <p>Скважина № 6174 пробурена в 1991г. Глубиной 80м, находится в стационарном павильоне. По качеству подземные воды пресные – минерализация 0,2мг/л; гидрокарбонатно -калиево-натриевые; по жёсткости – очень мягкие 1,25 мг/экв. По бактериологическим показателям воды здоровые. Подземные воды участка соответствуют требованиям СанПиН 3.02.002.04</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-0">
+              <div class="modal-text">
+                <p>Мы предлагает вам чистую природную воду торговой марки <strong>«Cool Waters»</strong>, которую можно пить без кипячения детям и взрослым. Наш ассортимент насчитывает более 50 видов напитков. </p>
+                <p>Кроме того одним из важных направлений деятельности фирмы является производство питьевой воды в бутылях ёмкостью 19л. и установка диспенсеров. Вода добывается с артезианской скважины. Она не нуждается в дополнительной обработке и очистке в домашних условиях, является наиболее естественной, полезной и рекомендуемой для приготовления пищи, в ней сохраняются все природные соли и минералы.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-img">
+                <img src="img/about/4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-img">
+                <img src="img/about/5.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="modal-text">
+                <p>До того как попасть к вам, вода проходит несколько ступеней очистки, а процесс кипячения заменяется обработкой ультрафиолетовыми лучами. Вода приобретает неповторимый вкус и особые свойства. Воду не перевозят до розлива, а упаковывают в экологически чистые бутылки на месте добычи, что позволяет максимально сохранять уникальные природные качества воды.</p> <p>На нашем заводе так же производятся газированные и негазированные напитки ёмкостью <strong>0.5л, 1л, 1.5л, 2л, 5л.</strong> Напитки производятся на основе воды торговой марки «Cool waters» и обладают высокими вкусовыми качествами. На сайте вы найдёте весь ассортимент вышеизложенной продукции. Так же мы производим сокосодержащие напитки на основе натурального сока. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-0">
+              <div class="modal-text">
+                <p>На сегодняшний день компания “Waters Service” является лидирующей компанией в г. Караганде и Карагандинской области, осуществляющей доставку питьевой воды, добытой из скважины, расположенной в экологически чистом районе. Работу нашей компании отличает гибкая ценовая политика, индивидуальный подход к каждому клиенту.</p>
+                <p>Операторы принимают заказы по телефону и всегда готовы ответить на любые вопросы клиентов. Сделать заказ по телефону можно в любой день недели, а так же в любое время суток по телефонам <strong>+7 (7212) 38-13-90</strong> и <strong>+7 (7212) 38-13-93</strong>.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-img">
+                <img src="img/about/6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p>Доставка воды осуществляется бесплатно в Караганде на фирменных автомобилях компании 6 дней в неделю с 9.00 до 20.00. По просьбе клиента производится санитарная обработка, сервисное и гарантийное обслуживание оборудования. </p>
+              <p>Доказательством высочайшего уровня обслуживания в нашей компании является тот факт, что нашими постоянными клиентами являются ведущие Казахстанские компании, число которых растёт с каждым днем.</p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="modal-btn center-block" data-dismiss="modal">Закрыть</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно Вода разной ёмкости -->
+  <div class="modal fade" id="modalWaters">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Питьевая вода различной ёмкости</h4>
+        </div>
+        <div class="modal-body">
+          <div class="waters-img">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/waters-gaz.jpg" alt="Вода газированная">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/waters-negaz.jpg" alt="Вода негазированная">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/water5.jpg" alt="Вода 5 литров">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-btn center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно соки, чай и шампанское -->
+  <div class="modal fade" id="modalJuice">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Сокосодержащие напитки, холодные чаи и детское шампанское</h4>
+        </div>
+        <div class="modal-body">
+          <div class="waters-img">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/juices-1.jpg" alt="Соки">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/ice-tea.jpg" alt="Чай">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/juices-2.jpg" alt="Соки">
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <div class="waters-block">
+                  <img src="img/produces/shampan.jpg" alt="Шампанское">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-btn center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно Напитки -->
+  <div class="modal fade" id="modalLimonades">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Напитки газированные</h4>
+        </div>
+        <div class="modal-body">
+          <div class="waters-img">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/limonades-1.jpg" alt="Лимонады">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/kvas.jpg" alt="Квас">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="waters-block">
+                  <img src="img/produces/limonades-2.jpg" alt="Лимонады">
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <div class="waters-block">
+                  <img src="img/produces/limonades-good.jpg" alt="Напитки Жаксы">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-btn center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно Дополнительное оборудование -->
+  <div class="modal fade" id="modalEquip">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center">Диспенсеры и помпы</h4>
+        </div>
+        <div class="modal-body">
+          <div class="equipment-img">
+            <div class="row">
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/61LA.jpg" alt="61LA">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/64LA.jpg" alt="64LA">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/V-78.jpg" alt="V-78">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/10TA.jpg" alt="10TA">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/10TK.jpg" alt="10TK">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/pompa-1.jpg" alt="Помпа">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/pompa-2.jpg" alt="Помпа">
+                </div>
+              </div>
+              <div class="col-md-3 col-md-offset-0">
+                <div class="equipt-modal-block">
+                  <img src="img/equipment/pompa-3.jpg" alt="Помпа">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-btn center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+
+
+  <!-- Валидация формы -->
+  <script>
+    jQuery(function($){
+       $("#phone").mask("+7 (999) 999-99-99");
+    });
+  </script>
+  
+  
+  <!-- Cлайдер для блока преимуществ -->
+  <script>
+    $(document).ready(function(){
+      $('.features-slider').slick({
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 6000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>'
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<button class="prev arrow"></button>',
+                nextArrow: '<button class="next arrow"></button>'
+              }
+            }
+          ]
+      });
+    });
+  </script>
+
+  <!-- Инициализируем слайдер для сопутствующих товаров -->
+  <script>
+    $(document).ready(function(){
+      $('.equipment-slider').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                prevArrow: '<button class="prev-white arrow"></button>',
+                nextArrow: '<button class="next-white arrow"></button>'
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<button class="prev-white arrow"></button>',
+                nextArrow: '<button class="next-white arrow"></button>'
+              }
+            }
+          ]
+      });
+    });
+  </script>
+
+  <!-- Автоматическое обновление формы -->
+  <script>
+    $('form').submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        alert("Ваша заявка принята. Наши операторы свяжутся с вами в течении 1 часа");
+        $("form").trigger("reset");
+      });
+      return false;
+    });
+  </script>
+  
+  </body>
+</html>
