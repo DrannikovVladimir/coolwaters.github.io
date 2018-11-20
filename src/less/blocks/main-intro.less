@@ -1,0 +1,157 @@
+.main-intro {
+  min-height: 600px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  color: #eeeeee;
+
+  background: #062d05 url("../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+
+}
+
+.main-intro__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 5;
+}
+
+.main-intro__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 85px;
+  line-height: 90px;
+}
+
+.main-intro__subtitle {
+  width: 500px;
+  margin: 0;
+  margin-bottom: 50px;
+
+  .other-text();
+}
+
+.main-intro__button {
+  width: 220px;
+
+  border-radius: 5px;
+
+  color: #222222;
+  text-transform: uppercase;
+  .text-bold();
+  letter-spacing: 1px;
+
+  background-color: #eeeeee;
+
+  &:hover {
+    background-color: darken(#eeeeee, 30%);
+  }
+}
+
+.main-intro__form {
+  width: 300px;
+  padding: 40px 20px;
+
+  border-radius: 5px;
+
+  text-align: center;
+  color: #333333;
+
+  background: #eeeeee;
+  opacity: 0.8;
+}
+
+@media (max-width: 892px) {
+  .main-intro__title {
+    margin-bottom: 20px;
+
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .main-intro__subtitle {
+    width: 400px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    .main-text();
+  }
+
+  .main-intro__form {
+    width: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-intro {
+    position: relative;
+
+    text-align: center;
+
+    background-position: right;
+
+    z-index: 2;
+
+    &::before {
+      content: "";
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: #000000;
+      opacity: 0.3;
+      z-index: 0;
+    }
+  }
+
+  .main-intro__wrapper {
+    flex-direction: column;
+  }
+
+  .main-intro__subtitle {
+    margin-bottom: 80px;
+  }
+
+  .main-intro__button {
+    display: none;
+  }
+
+  .main-intro__form {
+    width: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-intro {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .main-intro__title {
+    font-size: 45px;
+  }
+
+  .main-intro__subtitle {
+    order: 1;
+    width: 100%;
+    margin-bottom: 40px;
+
+    font-size: 12px;
+  }
+
+  .main-intro__form {
+    width: 100%;
+  }
+}

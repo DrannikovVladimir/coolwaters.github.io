@@ -5,123 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ТОО Waters Service</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,700&amp;subset=cyrillic" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-  
-  <main id="main">
+
+  <header class="main-header">
     <div class="container">
-      <div class="row">
-        <div class="main-nav">
-          <div class="col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-5">
-            <div class="main-logo">
-              <div class="logo">
-                <img src="img/logo.png" alt="Логотип">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-10 col-md-offset-0 col-sm-10">
-            <nav>
-              <ul>
-                <li><a href="#features">Преимущества</a></li>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#produces">Напитки</a></li>
-                <li><a href="#equipment">Оборудование</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
+      <div class="main-header__wrapper">
+        <div class="main-header__logo">
+          <img src="img/logo.png" width="80" alt="Логотип">
         </div>
+        <nav class="main-header__nav">
+          <button class="main-header__button" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <ul class="main-header__list main-header__list--menu">
+            <li class="main-header__item main-header__item--menu">
+              <a class="main-header__link" href="#features">Преимущества</a>
+            </li>
+            <li class="main-header__item main-header__item--menu">
+              <a class="main-header__link" href="#about">О компании</a>
+            </li>
+            <li class="main-header__item main-header__item--menu">
+              <a class="main-header__link" href="#produces">Напитки</a>
+            </li>
+            <li class="main-header__item main-header__item--menu">
+              <a class="main-header__link" href="#equipment">Оборудование</a>
+            </li>
+            <li class="main-header__item main-header__item--menu">
+              <a class="main-header__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="main-header__list main-header__list--phone">
+          <li class="main-header__item main-header__item--phone"><a href="" class="phone-link">+7 (7212) 38-13-92</a></li>
+          <li class="main-header__item main-header__item--phone"><a href="" class="phone-link">+7 (7212) 38-13-94</a></li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-          <div class="main-header">
-            <h1>Cool Waters</h1>
-            <p>Артезианская природная питьевая вода</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-intro">
+      <div class="container">
+        <div class="main-intro__wrapper">
+          <div class="main-intro__wrapper-title">
+            <h1 class="main-intro__title">Cool Waters</h1>
+            <p class="main-intro__subtitle">Артезианская природная питьевая вода. Михайловское месторождение подземных вод (Кумызкудукская свита)</p>
+            <a class="main-intro__button button" href="#">Узнать больше</a>
           </div>
-          <div class="main-title">
-            <p>Михайловское месторождение подземных вод</p>
-            <p>(Кумызкудукская свита)</p>
-            <button class="main-title-button" data-toggle="tab" data-target="#about">Узнать больше</button>
-          </div>
-        </div>
-        <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
-          <div class="main-form">
-            <form action="mailer/smart.php" method="POST">
-              <h3>Заказать доставку</h3>
-              <p>Для заказа воды введите свои данные и нажмите кнопку заказать</p>
-              <label for="user">Введите имя</label>
-              <input type="text" id="user" name="user-name" required><br>
-              <label for="phone">Введите телефон</label>
-              <input type="text" id="phone" name="user-phone" required><br>
-              <button class="main-btn">Заказать</button>
+          <div class="main-intro__form">
+            <form class="main-form" action="mailer/smart.php" method="POST">
+              <h3 class="main-form__title">Заказать доставку</h3>
+              <p class="main-form__subtitle">Заполните форму ниже и нажмите кнопку заказать</p>
+              <div class="main-form__wrapper-input">
+                <label class="main-form__label" for="user">Введите имя</label>
+                <input class="main-form__intput" type="text" id="user" name="user-name" required>
+              </div>
+              <div class="main-form__wrapper-input">
+                <label class="main-form__label" for="phone">Введите телефон</label>
+                <input class="main-form__intput" type="text" id="phone" name="user-phone" required>
+              </div>
+              <button class="main-form__button button">Заказать</button>
             </form>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header">
-        <h2>Наши преимущества</h2>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features__wrapper">
+          <div class="features__title-wrapper">
+            <h2 class="features__title">Наши преимущества</h2>
+            <p class="features__subtitle">Наша компания занимается добычей, производством, доставкой воды и напитков во все города Казахстана и ближнего зарубежья</p>
+          </div>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__image">
+               <img src="img/features/1.png" width="240" alt="">
+              </div>
+              <h3 class="features__item-title" >Добыча и розлив питьевой воды</h3>
+              <div class="features__text-wrapper">
+                <p>Скважина, глубиной 80 метров находится в стационарном павильоне.
+                    Химические анализы воды выполняются аттестованными лабораториями г.Караганды.</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__image">
+                <img src="img/features/2.png" width="240" alt="">
+              </div>
+              <h3 class="features__item-title">Производство напитков</h3>
+              <div class="features__text-wrapper">
+                <p>Мы выпускаем газированные и негазированные безалкогольные напитки,
+                   сокосодержащую продукцию, холодный чай, колу, квас и детское шампанское.</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__image">
+                <img src="img/features/3.png" width="240" alt="">
+              </div>
+              <h3 class="features__item-title">Логистика и&#160;доставка</h3>
+              <div class="features__text-wrapper">
+                <p>Осуществляется доставка по всей территории Республики Казахстан.
+                    Мы работаем с самыми крупными диллерами и доставляем товар в любой город РК.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="features-slider">
-        <div class="features-block">
-          <div class="features-block-header">
-            <h3>Добыча и розлив<br>питьевой воды</h3>
-          </div>
-          <div class="features-img">
-           <img src="img/features/1.png" alt="">
-          </div>
-          <div class="features-text">
-            <p>Скважина пробурена в 1991 году, глубиной 80 метров. Находится в стационарном павильоне</p>
-            <p>Установлен водомер, имеется электроуровнемер, журналы для учёта забора воды и замеров</p>
-            <p>Химические анализы воды выполняются аттестованными лабораториями г.Караганды</p>
-          </div>
-        </div>
-        <div class="features-block">
-          <div class="features-block-header">
-            <h3>Производство<br>напитков</h3>
-          </div>
-          <div class="features-img">
-            <img src="img/features/2.png" alt="">
-          </div>
-          <div class="features-text">
-            <p>Наша компания выпускает газированные и негазированные безалкогольные напитка.</p>
-            <p>Так же присутствует линейка по производству сокосодержащей продукции и холодных чаёв</p>
-            <p>Мы рады предложить Вам колу, квас и детское шампанское</p>
-          </div>
-        </div>
-        <div class="features-block">
-          <div class="features-block-header">
-            <h3>Логистика и<br>доставка</h3>
-          </div>
-          <div class="features-img">
-            <img src="img/features/3.png" alt="">
-          </div>
-          <div class="features-text">
-            <p>Реализация нашей продукции успешно осуществляется по всей территории Республики Казахстан</p>
-            <p>Мы работаем с самыми крупными диллерами и доставляем товар в любой город РК</p>
-            <p>Улучшаем координацию взаимодействия логистических и производственных процессов</p>
-          </div>
-        </div>
-      </div>      
-    </div>
-  </section>
-  
+    </section>
+  </main>
+
+
   <section class="about" id="about">
     <div class="container">
       <div class="section-header">
@@ -320,8 +318,8 @@
       </div>
     </div>
   </footer>
-  
-  
+
+
 
   <!-- Модальное окно для секции About -->
   <div class="modal fade" id="modalAbout">
@@ -332,7 +330,7 @@
           <h4 class="modal-title text-center">Краткая история развития компании</h4>
         </div>
         <div class="modal-body">
-          
+
           <div class="row">
             <div class="col-md-4">
               <div class="about-img">
@@ -586,7 +584,7 @@
     </div>
   </div>
 
-  
+
   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -599,8 +597,8 @@
        $("#phone").mask("+7 (999) 999-99-99");
     });
   </script>
-  
-  
+
+
   <!-- Cлайдер для блока преимуществ -->
   <script>
     $(document).ready(function(){
@@ -685,6 +683,6 @@
       return false;
     });
   </script>
-  
+
   </body>
 </html>
