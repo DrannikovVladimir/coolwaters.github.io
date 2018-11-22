@@ -1,0 +1,135 @@
+.products {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.products__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "Cormorant Infant", "Palatino", serif;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.products__subtitle {
+  margin-bottom: 80px;
+
+  text-align: center;
+
+  opacity: 0.6;
+}
+
+.products .products__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 40px;
+
+  outline: none;
+}
+
+.products .products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.products__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  line-height: 32px;
+
+  opacity: 0.8;
+}
+
+.products__item-text {
+  margin-bottom: 30px;
+
+  opacity: 0.6;
+}
+
+.products__image-wrapper {
+  width: 60%;
+  margin-right: 60px;
+}
+
+.products__text-wrapper {
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+.products__button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  color: #eeeeee;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  background-color: #1179a9;
+
+  &:hover {
+    background-color: lighten(#1179a9, 30%);
+  }
+
+  &:active {
+    color: darken(#eeeeee, 30%);
+  }
+}
+
+@media (max-width: 960px) {
+  .products__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .products .products__item {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .products__image-wrapper {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .products__text-wrapper {
+    width: 80%;
+  }
+
+  .products__button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .products__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .products .products__item {
+    margin-bottom: 10px;
+  }
+
+  .products__item-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .products__image-wrapper {
+    width: 100%;
+  }
+
+  .products__text-wrapper {
+    width: 100%;
+  }
+}

@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Open Sans";
-  font-weight: 300;
+  font-family: "Cormorant Infant";
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
-  src: local("Open Sans Light"),
-    local("opensanslight"),
-    url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
+  src: local("Cormorant Infant"),
+    local("CormorantInfant-Regular"),
+    url("../fonts/CormorantInfant-Regular.woff2") format("woff2"),
+    url("../fonts/CormorantInfant-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -65,11 +65,10 @@ button {
 
 .button {
   display: block;
-  width: 180px;
-  padding-top: 12px;
-  padding-left: 20px;
-  padding-bottom: 12px;
-  padding-right: 20px;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-bottom: 15px;
+  padding-right: 35px;
   text-align: center;
 }
 
@@ -112,4 +111,38 @@ button {
   right: 0;
 
   background-image: url("../img/features/right-arrow.png");
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin-right: 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.slick-dots button {
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  background-color: #eeeeee;
+}
+
+.slick-active button {
+  border-color: #cccccc;
 }

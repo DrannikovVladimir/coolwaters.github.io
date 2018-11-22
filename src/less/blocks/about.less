@@ -6,8 +6,9 @@
   margin: 0;
   margin-bottom: 10px;
 
-  font-size: 50px;
-  line-height: 50px;
+  font-family: "Cormorant Infant", "Palatino", serif;
+  font-size: 70px;
+  line-height: 80px;
 
   text-align: center;
 }
@@ -36,6 +37,10 @@
   &:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+.about__image-wrapper img {
+  border-radius: 5px;
 }
 
 .about__item-title {
@@ -87,6 +92,27 @@
 
 .about__item-text {
   opacity: 0.6;
+}
+
+.about__button {
+  margin: 0 auto;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+
+  background-color: #1179a9;
+
+  &:hover {
+    background-color: lighten(#1179a9, 30%);
+  }
+
+  &:active {
+    color: darken(#ffffff, 30%);
+  }
 }
 
 @media (max-width: 1060px) {

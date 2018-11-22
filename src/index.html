@@ -10,44 +10,45 @@
   </head>
   <body>
 
-  <header class="main-header">
-    <div class="container">
-      <div class="main-header__wrapper">
-        <div class="main-header__logo">
-          <img src="img/logo.png" width="80" alt="Логотип">
-        </div>
-        <nav class="main-header__nav">
-          <button class="main-header__button" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
-          <ul class="main-header__list main-header__list--menu">
-            <li class="main-header__item main-header__item--menu">
-              <a class="main-header__link" href="#features">Преимущества</a>
-            </li>
-            <li class="main-header__item main-header__item--menu">
-              <a class="main-header__link" href="#about">О компании</a>
-            </li>
-            <li class="main-header__item main-header__item--menu">
-              <a class="main-header__link" href="#produces">Напитки</a>
-            </li>
-            <li class="main-header__item main-header__item--menu">
-              <a class="main-header__link" href="#equipment">Оборудование</a>
-            </li>
-            <li class="main-header__item main-header__item--menu">
-              <a class="main-header__link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="main-header__list main-header__list--phone">
-          <li class="main-header__item main-header__item--phone"><a href="" class="phone-link">+7 (7212) 38-13-92</a></li>
-          <li class="main-header__item main-header__item--phone"><a href="" class="phone-link">+7 (7212) 38-13-94</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
   <main>
     <section class="main-intro">
+
+      <header class="main-header">
+        <div class="container">
+          <div class="main-header__wrapper">
+            <div class="main-header__logo">
+              <img src="img/logo.png" width="80" alt="Логотип">
+            </div>
+            <nav class="main-header__nav">
+              <button class="main-header__button" type="button">
+                <span class="visually-hidden">Меню</span>
+              </button>
+              <ul class="main-header__list main-header__list--menu">
+                <li class="main-header__item main-header__item--menu">
+                  <a class="main-header__link" href="#features">Преимущества</a>
+                </li>
+                <li class="main-header__item main-header__item--menu">
+                  <a class="main-header__link" href="#about">О компании</a>
+                </li>
+                <li class="main-header__item main-header__item--menu">
+                  <a class="main-header__link" href="#produces">Напитки</a>
+                </li>
+                <li class="main-header__item main-header__item--menu">
+                  <a class="main-header__link" href="#equipment">Оборудование</a>
+                </li>
+                <li class="main-header__item main-header__item--menu">
+                  <a class="main-header__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="main-header__list main-header__list--phone">
+              <li class="main-header__item main-header__item--phone"><a href="" class="phone-link">+7 (7212) 38-13-92</a></li>
+              <li class="main-header__item main-header__item--phone"><a href="" class="phone-link">+7 (7212) 38-13-94</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
       <div class="container">
         <div class="main-intro__wrapper">
           <div class="main-intro__wrapper-title">
@@ -61,11 +62,11 @@
               <p class="main-form__subtitle">Заполните форму ниже и нажмите кнопку заказать</p>
               <div class="main-form__wrapper-input">
                 <label class="main-form__label" for="user">Введите имя</label>
-                <input class="main-form__intput" type="text" id="user" name="user-name" required>
+                <input class="main-form__input main-form__input--user" type="text" id="user" name="user-name" required>
               </div>
               <div class="main-form__wrapper-input">
                 <label class="main-form__label" for="phone">Введите телефон</label>
-                <input class="main-form__intput" type="text" id="phone" name="user-phone" required>
+                <input class="main-form__input main-form__input--phone" type="text" id="phone" name="user-phone" required>
               </div>
               <button class="main-form__button button">Заказать</button>
             </form>
@@ -185,73 +186,74 @@
             </div>
           </li>
         </ul>
-        <button class="about__button button">Узнать больше</button>
+        <button class="about__button button">Заказать воду</button>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products__title-wrapper">
+          <h2 class="products__title">Основная продукция</h2>
+          <p class="products__subtitle">Посмотрите презентацию нашей продукции, для уточнения цен звоните по телефонам или оставьте заявку на сайте</p>
+        </div>
+        <ul class="products__list products__slider">
+          <li class="products__item">
+            <div class="products__image-wrapper">
+              <img src="img/products/juices.png" alt="Соки и чаи">
+            </div>
+            <div class="products__text-wrapper">
+              <h3 class="products__item-title">Сокосодержащие напитки и&#160;холодный чай</h3>
+              <p class="products__item-text">Cодержание натурального сока в&#160;сокосодержащих
+                напитках составляет около 10%. Холодный чай отлично уталяет жажду в&#160;любое
+                время года, а детское шампанское станет прекрасным украшением на любых
+                праздниках.</p>
+              <button class="products__button button">Посмотреть контакты</button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__image-wrapper">
+              <img src="img/products/waters.png" alt="Вода">
+            </div>
+            <div class="products__text-wrapper">
+              <h3 class="products__item-title">Газированная и&#160;негазированная вода</h3>
+              <p class="products__item-text">Питьевая артезианская вода торговой марки
+                “Cool Waters” в&#160;ёмкостях 0.5, 1.0, 1.5, 2.0 и&#160;5 литров.</p>
+              <button class="products__button button">Посмотреть контакты</button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__image-wrapper">
+              <img src="img/products/champagne.png" alt="Шампанское и квас">
+            </div>
+            <div class="products__text-wrapper">
+              <h3 class="products__item-title">Шампанское и&#160;квас</h3>
+              <p class="products__item-text">Огромный выбор лимонадов, которые уже давно
+                стали классикой такие как Тархун, Дюшес, Буратино, Лимонад и много, много
+                других напитков. Из сопуствующей продукции можем предложить несколько видов
+                кваса в&#160;разных литражах, кола, выпускаемая под маркой “Cool Cola”, Байкал и
+                т.п.</p>
+              <button class="products__button button">Посмотреть контакты</button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__image-wrapper">
+              <img src="img/products/limonades.png" alt="Лимонады">
+            </div>
+            <div class="products__text-wrapper">
+              <h3 class="products__item-title">Напитки газированные</h3>
+              <p class="products__item-text">Огромный выбор лимонадов, которые уже давно
+                стали классикой такие как Тархун, Дюшес, Буратино, Лимонад и много, много
+                других напитков. Из сопуствующей продукции можем предложить несколько видов
+                кваса в разных литражах, кола, выпускаемая под маркой “Cool Cola”, Байкал
+                и&#160;т.п.</p>
+              <button class="products__button button">Посмотреть контакты</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
-
-  <section class="produces" id="produces">
-    <div class="container">
-      <div class="section-header">
-        <h2>Основная продукция</h2>
-      </div>
-
-      <div class="produces-block">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="produces-text">
-              <h3>Сокосодержащие напитки и холодные чаи</h3>
-              <p>Cодержание натурального сока в сокосодержащих напитках составляет около 10%. Холодный чай отлично уталяет жажду в любое время года, а детское шампанское станет прекрасным украшением на любых праздниках. </p>
-              <button class="produces-btn" data-toggle="modal" data-target="#modalJuice">открыть каталог</button>
-            </div>
-          </div>
-          <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-            <div class="produces-img">
-              <img src="img/produces/juices.png" alt="Соки и чаи">
-            </div>
-          </div>
-        </div>
-        <div class="produces-line"><img src="img/produces/line.png" alt="линия"></div>
-      </div>
-
-      <div class="produces-block">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-            <div class="produces-img">
-              <img src="img/produces/waters.png" alt="Вода">
-            </div>
-          </div>
-          <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="produces-text">
-              <h3>Газированная и негазированная вода</h3>
-              <p>Питьевая артезианская вода торговой марки “Cool Waters” в ёмкостях 0.5, 1.0, 1.5, 2.0 и 5 литров.</p>
-              <button class="produces-btn" data-toggle="modal" data-target="#modalWaters">открыть каталог</button>
-            </div>
-          </div>
-        </div>
-        <div class="produces-line"><img src="img/produces/line.png" alt="линия"></div>
-      </div>
-
-      <div class="produces-block">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="produces-text">
-              <h3>Лимонады</h3>
-              <p>Огромный выбор лимонадов, которые уже давно стали классикой такие как Тархун, Дюшес, Буратино, Лимонад и много, много других напитков. </p>
-              <p>Из сопуствующей продукции можем предложить несколько видов кваса в разных литражах, кола, выпускаемая под маркой “Cool Cola”, Байкал и т.п.</p>
-              <button class="produces-btn" data-toggle="modal" data-target="#modalLimonades">открыть каталог</button>
-            </div>
-          </div>
-          <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-            <div class="produces-img">
-              <img src="img/produces/limonades.png" alt="Лимонады">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="equipment" id="equip">
     <div class="container">
@@ -621,7 +623,6 @@
   <script src="slick/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
 
-
   <!-- Валидация формы -->
   <script>
     jQuery(function($){
@@ -629,6 +630,21 @@
     });
   </script>
 
+  <!-- Слайдер для блока с товарами -->
+  <script>
+    $(document).ready(function(){
+      $('.products__slider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 9000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '',
+        nextArrow: ''
+      });
+    });
+  </script>
 
   <!-- Cлайдер для блока преимуществ -->
   <script>
@@ -666,40 +682,6 @@
                 slidesToScroll: 1,
                 prevArrow: '<button class="prev-arrow slider-arrow"></button>',
                 nextArrow: '<button class="next-arrow slider-arrow"></button>'
-              }
-            }
-          ]
-      });
-    });
-  </script>
-
-  <!-- Инициализируем слайдер для сопутствующих товаров -->
-  <script>
-    $(document).ready(function(){
-      $('.equipment-slider').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                prevArrow: '<button class="prev-white arrow"></button>',
-                nextArrow: '<button class="next-white arrow"></button>'
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                prevArrow: '<button class="prev-white arrow"></button>',
-                nextArrow: '<button class="next-white arrow"></button>'
               }
             }
           ]
